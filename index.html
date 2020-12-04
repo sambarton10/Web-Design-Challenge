@@ -8,20 +8,32 @@
 
 <div class="container">
     <nav class="navbar text-white" href="index.html">Latitude
+        <li class="dropdown" style="float:right;">
+            <button class="dropbtn"> Data</button>
+            <a href="data.html" class="dropbtn"></a>
+        </li>
+        <li class="dropdown" style="float:right;">
+            <button class="dropbtn"> Comparison</button>
+            <a href="comparison.html" class="dropbtn"></a>
+        </li>
         <div class="dropdown" style="float:right;">
             <button class="dropbtn"> Plots</button>
-            <div class="dropdown-content">
+            <li class="dropdown-content">
               <a href="temp.html">Max Temperature</a>
               <a href="humidity.html">Humidity</a>
               <a href="cloudiness.html">Cloudiness</a>
               <a href="windspeed.html">Wind Speed</a>
-            </div>
+            </li>
         </div>
+        <li class="dropdown" style="float:right;">
+            <button class="dropbtn"> Summary</button>
+            <a href="index.html" class="dropbtn"></a>
+        </li>
     </nav>
 
 </div>
     <header class="header">
-        <h1 id="big-font" class="lightBlue">Max Temperature</h1> 
+        <h1 id="big-font" class="lightBlue">Summary: Latitude vs. X</h1> 
     </header>
 
 <body>
