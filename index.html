@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
         <title>Weather Analysis</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="styles.css">
 </head>
 
 <div class="container">
     <nav class="navbar text-white" href="index.html">Latitude
-        <li class="dropdown" style="float:right;">
-            <button class="dropbtn"> Data</button>
-            <a href="data.html" class="dropbtn"></a>
-        </li>
-        <li class="dropdown" style="float:right;">
-            <button class="dropbtn"> Comparison</button>
-            <a href="comparison.html" class="dropbtn"></a>
-        </li>
+        <div class="dropdown" style="float:right;">
+            <a href="data.html" class="dropbtn">Data</a>
+        </div>
+        <div class="dropdown" style="float:right;">
+            <a href="comparison.html" class="dropbtn">Comparison</a>
+        </div>
         <div class="dropdown" style="float:right;">
             <button class="dropbtn"> Plots</button>
             <li class="dropdown-content">
@@ -25,17 +23,56 @@
               <a href="windspeed.html">Wind Speed</a>
             </li>
         </div>
-        <li class="dropdown" style="float:right;">
-            <button class="dropbtn"> Summary</button>
-            <a href="index.html" class="dropbtn"></a>
-        </li>
+        <div class="dropdown" style="float:right;" >
+            <a href="index.html" class="dropbtn">Summary</a>
+        </div>
     </nav>
 
 </div>
-    <header class="header">
-        <h1 id="big-font" class="lightBlue">Summary: Latitude vs. X</h1> 
-    </header>
+
+<div class="container content">
+    <div class="row">
+        <div>
+            <div>
+                <h1 id="big-font" class="lightBlue">Summary: Latitude vs. X</h1> 
+                <hr>
+                <div class="thumbnail">
+                    <img src="images/Fig1.png">
+                </div>
+                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.  </p> 
+                    
+                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="col-md-12">
+                <h1 id="big-font" class="lightBlue">Visualizations</h1>
+                <hr>
+                <div class="row">
+                    <div>
+                        <a href="temp.html"><img src="images/Fig1.png" width="100%"  alt="temperature">
+                        </a> 
+                    </div>
+                    <div>
+                        <a href="humidity.html"><img src="images/Fig2.png" width="100%" alt="humidity"></a>
+                    </div>
+               
+                    <div>
+                        <a href="cloudiness.html"><img src="images/Fig3.png" width="100%"  alt="cloudiness"></a>
+                    </div>
+
+                    <div>
+                        <a href="windspeed.html"><img src="images/Fig4.png"width="100%"  alt="wind speed"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <body>
 </body>
 </html>
+
