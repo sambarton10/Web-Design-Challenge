@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+        <title>Weather Analysis</title>
+        <link rel="stylesheet" href="styles.css">
+</head>
+
+<div class="container">
+    <nav class="navbar text-white" href="index.html">Latitude
+        <div class="dropdown" style="float:right;">
+            <a href="data.html" class="dropbtn">Data</a>
+        </div>
+        <div class="dropdown" style="float:right;">
+            <a href="comparison.html" class="dropbtn">Comparison</a>
+        </div>
+        <div class="dropdown" style="float:right;">
+            <button class="dropbtn"> Plots</button>
+            <li class="dropdown-content">
+              <a href="temp.html">Max Temperature</a>
+              <a href="humidity.html">Humidity</a>
+              <a href="cloudiness.html">Cloudiness</a>
+              <a href="windspeed.html">Wind Speed</a>
+            </li>
+        </div>
+        <div class="dropdown" style="float:right;" >
+            <a href="index.html" class="dropbtn">Summary</a>
+        </div>
+    </nav>
+
+</div>
+
+
+    <div class="container content bg-white">
+        <h1>Comparison: Latitude vs X</h1>
+        <hr>
+        <p>Click any plot to get indept analysis</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="text-center">vs. Max Teperature</h1>
+                <a href="temp.html"><img width="100%" src="images/Fig1.png"></a>   
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-center">vs. Humidity</h1>
+                <a href="humidity.html"><img width="100%" src="images/Fig2.png"></a>  
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="text-center">vs. Cloudiness </h1>
+                <a href="cloudiness.html"><img width="100%" src="images/Fig3.png"></a>   
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-center">vs. Wind Speed</h1>
+                <a href="windspeed.html"><img width="100%" src="images/Fig4.png"></a>  
+            </div>
+        </div>   
+    </div>
+    
+</html>
